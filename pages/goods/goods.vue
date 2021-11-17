@@ -1,5 +1,5 @@
 <template>
-	<view >
+	<view>
 		
 	</view>
 </template>
@@ -8,23 +8,15 @@
 	export default {
 		data() {
 			return {
-			
+				
 			}
 		},
-		onLoad() {
-			
-			
-			this.$u.utils.isLogin()
-  
-			
-  },
-		
 		methods: {
-   
+			
 		}
 	}
 </script>
 
-<style lang="scss" scoped>
-	
+<style>
+
 </style>
