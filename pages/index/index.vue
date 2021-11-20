@@ -6,7 +6,7 @@
 		</view>
 		
 		<u-row gutter="16" class="u-skeleton">
-					<u-col span="6" v-for='item in goodsList.length !==0? goodsList: [{},{},{},{}]' >
+					<u-col span="6" v-for='item in goodsList' >
 						<goods-card :item="item"></goods-card>
 					
 					</u-col>
@@ -39,7 +39,7 @@
 				   }
 			   ],
 			   sortCurrent:0,  //标签索引
-			   goodsList:[],  //商品信息
+			   goodsList:[{},{},{},{}],  //商品信息
 			   categoriesList:[],
 					page:1,  //商品页码 商品参数数据
 			   loading:false
@@ -97,7 +97,7 @@
 			// 					type:'warning'
 			// 				})
 							this.loading=false
-					this.goodsList=[...this.goodsList,...res.goods.data]
+					this.goodsList=this.goodsList.pop().title?[...this.goodsList,...res.goods.data]:res.goods.data
 					this.categoriesList=res.categories
 					this.imgList=res.slides
 					
@@ -105,7 +105,7 @@
  changeSort(index){
 	   this.sortCurrent=index
 	   //判断筛选条件
-	   this.goodsList=[] //商品数据重置
+	   this.goodsList=[{},{},{},{}] //商品数据重置
 	   this.page=1 //分页置空
 	   this.getList()
 	 

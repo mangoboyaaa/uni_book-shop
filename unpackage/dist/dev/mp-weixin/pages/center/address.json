@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "地址管理",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-button": "/uview-ui/components/u-button/u-button"
+  }
+}

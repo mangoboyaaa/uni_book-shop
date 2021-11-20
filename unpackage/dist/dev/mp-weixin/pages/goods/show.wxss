@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/**
+ * 下方引入的为uView UI的集成样式文件，为scss预处理器，其中包含了一些"u-"开头的自定义变量
+ * uView自定义的css类名和scss变量，均以"u-"开头，不会造成冲突，请放心使用 
+ */
+.goods-item.data-v-4284f84f {
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+}
+.goods-item .name.data-v-4284f84f {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  width: 100%;
+}
+.goods-item .price.data-v-4284f84f {
+  width: 40%;
+  color: red;
+  padding-left: 20rpx;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.goods-item .sales.data-v-4284f84f {
+  width: 40%;
+  color: #888;
+  font-weight: bold;
+  font-size: 32rpx;
+  padding-right: 20rpx;
+}
+.content.data-v-4284f84f {
+  min-height: 360rpx;
+}
+.navigation.data-v-4284f84f {
+  display: flex;
+  border: solid 2rpx #f2f2f2;
+  background-color: #ffffff;
+  padding: 16rpx 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.navigation .left.data-v-4284f84f {
+  display: flex;
+  font-size: 20rpx;
+  margin-right: 80rpx;
+}
+.navigation .left .item.data-v-4284f84f {
+  margin: 0 30rpx;
+}
+.navigation .left .item.car.data-v-4284f84f {
+  text-align: center;
+  position: relative;
+}
+.navigation .left .item.car .car-num.data-v-4284f84f {
+  position: absolute;
+  top: -10rpx;
+  right: -10rpx;
+}
+.navigation .right.data-v-4284f84f {
+  display: flex;
+  font-size: 28rpx;
+  align-items: center;
+}
+.navigation .right .btn.data-v-4284f84f {
+  line-height: 66rpx;
+  padding: 0 30rpx;
+  border-radius: 36rpx;
+  color: #ffffff;
+}
+.navigation .right .cart.data-v-4284f84f {
+  background-color: #ed3f14;
+  margin-right: 30rpx;
+}
+.navigation .right .buy.data-v-4284f84f {
+  background-color: #ff7900;
+}
+
