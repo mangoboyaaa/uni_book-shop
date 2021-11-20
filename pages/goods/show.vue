@@ -75,7 +75,7 @@
 			</view>
 			<view class="right "  >
 					<view class="buy btn u-line-1" @click="addCart()">加入购物车</view>
-							<view class="buy btn u-line-1">立即购买</view>
+						
 						</view>
 		</view>
 		<!--引用组件-->

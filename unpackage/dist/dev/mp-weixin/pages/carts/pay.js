@@ -234,7 +234,7 @@ var _default =
     },
     toPay: function toPay() {
       //支付
-      this.$u.toast('支付功能暂未开通');
+      this.$u.toast('暂无支付功能');
     },
     toAdress: function toAdress() {
       console.log(1);

@@ -197,12 +197,12 @@ var _default =
   data: function data() {var _this = this;
     return {
       form: {
-        name: '1',
-        address: '2',
-        phone: '13684561975',
-        province: '3',
-        city: '4',
-        county: '5' },
+        name: '',
+        address: '',
+        phone: '',
+        province: '',
+        city: '',
+        county: '' },
 
 
       rules: {
