@@ -39,7 +39,7 @@
             "path" : "pages/auth/login",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "登录",
                 "enablePullDownRefresh": false
             }
             
@@ -48,7 +48,63 @@
             "path" : "pages/auth/register",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "注册",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/center/baseInfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "修改个人信息",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/goods/show",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "商品详情",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+        ,{
+            "path" : "pages/carts/pay",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "确认订单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/center/address",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "地址管理",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        
+        ,{
+            "path" : "pages/center/addAddress",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "添加收货地址",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/center/collect",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "个人收藏",
                 "enablePullDownRefresh": false
             }
             

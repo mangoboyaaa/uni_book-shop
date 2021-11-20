@@ -1,6 +1,6 @@
 <template>
 	<view class="wrap u-p-20">
-			<u-form :model="form" ref="uForm" :rules="formRule" :error-type="['message']" label-width="160">
+			<u-form :model="form" ref="uForm"  :error-type="['message']" label-width="160">
 				<u-form-item label="昵称" prop="name">
 					<u-input v-model="form.name" placeholder="请输入昵称" />
 				</u-form-item>
@@ -23,8 +23,8 @@
 		data() {
 			return {
 				form:{
-					name:'123',
-					email:'9456123@qq.com',
+					name:'',
+					email:'',
 					password:'',
 					password_confirmation:'',
 				},

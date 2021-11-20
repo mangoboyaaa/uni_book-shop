@@ -9,7 +9,7 @@
 		
 			<view class="alternative">
 				<button class="issue">找回密码</button>
-				<button class="issue">注册</button>
+				<button class="issue" @click="register">注册</button>
 			</view>
 		</view>
 		
@@ -43,14 +43,16 @@ export default {
 				password:this.password
 			}
 			const res = await this.$u.api.authLogin(params)
-			console.log(res)
+		
 			
 			//登陆后，缓存token
 			this.$u.vuex('vuex_token',res.access_token)
 			
-			//登陆后，缓存用户信息
-			const userInfo=await this.$u.api.userInfo()
-			this.$u.vuex=('vuex_user',userInfo)
+								//重新请求用户信息//更新vuex中的user
+			this.$u.utils.updateUser()
+			
+			
+		
 			this.$u.toast('登陆成功')
 			
 			//登陆后，跳转到来源页
@@ -64,7 +66,12 @@ export default {
 			
 			
 		},
-		
+		register(){
+			this.$u.route({
+				type:'reLaunch',
+				url:'pages/auth/register'
+			})
+		}
 	}
 };
 </script>

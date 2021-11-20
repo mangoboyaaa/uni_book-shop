@@ -4,6 +4,7 @@
 		<view class="u-text-center u-m-t-30">
 			<u-tabs :list="sortList" bar-width='100' item-width='160' :is-scroll="true" :current="sortCurrent" @change="changeSort" ></u-tabs>
 		</view>
+		
 		<u-row gutter="16" class="u-skeleton">
 					<u-col span="6" v-for='item in goodsList.length !==0? goodsList: [{},{},{},{}]' >
 						<goods-card :item="item"></goods-card>
